@@ -1,3 +1,7 @@
+package net.lista;
+
+import net.pokemons.clasepadre.Pokemon;
+
 public class ListaPokemon {
 
     private Pokemon[] pokemonArray;
@@ -37,7 +41,7 @@ public class ListaPokemon {
             System.out.println("No hay pokemons en la lista");
         } else {
             for (int i = 0; i < cantidad; i++) {
-                System.out.println("Pokemon " + (i + 1) + ":");
+                System.out.println("net.salesianos.clases.Pokemon " + (i + 1) + ":");
                 System.out.println(pokemonArray[i].toString());
                 System.out.println();
             }

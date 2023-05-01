@@ -1,4 +1,8 @@
-public class PokemonLegendario extends Pokemon{
+package net.pokemons.clasehija;
+
+import net.pokemons.clasepadre.Pokemon;
+
+public class PokemonLegendario extends Pokemon {
     private String localizacion;
 
 

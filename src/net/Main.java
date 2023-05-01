@@ -1,3 +1,9 @@
+package net;
+
+import net.lista.ListaPokemon;
+import net.pokemons.clasehija.PokemonLegendario;
+import net.pokemons.clasepadre.Pokemon;
+
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +28,7 @@ public class Main {
 
             switch (opcion) {
                 case "a":
-                    System.out.println("Introduce el nombre del Pokemon: ");
+                    System.out.println("Introduce el nombre del net.salesianos.clases.Pokemon: ");
                     String nombre = scanner.nextLine();
                     System.out.println("Introduce el tipo");
                     String tipo = scanner.nextLine();
@@ -32,7 +38,7 @@ public class Main {
                     System.out.println("Avistamiento añadido correctamente");
                     break;
                 case "b":
-                    System.out.println("Ingrese el nombre del Pokemon legendario: ");
+                    System.out.println("Ingrese el nombre del net.salesianos.clases.Pokemon legendario: ");
                     String nombreLegendario = scanner.nextLine();
                     System.out.println("Ingrese el tipo de pokemon legendario: ");
                     String tipoLegendario = scanner.nextLine();
@@ -45,7 +51,7 @@ public class Main {
                     System.out.println("Avistamiento legendario añadido");
                     break;
                 case "c":
-                    System.out.println("Introduce el nombre del Pokemon que quieres capturar");
+                    System.out.println("Introduce el nombre del net.salesianos.clases.Pokemon que quieres capturar");
                     String nombreCaptura = scanner.nextLine();
                     Pokemon pokemonCaptura = listaAvistados.buscarPokemon(nombreCaptura);
                     if (pokemonCaptura != null) {
@@ -63,7 +69,7 @@ public class Main {
                         pokemonCaptura.setDescripcion(descripcion);
 
                         listaCapturados.agregarPokemon(pokemonCaptura);
-                        System.out.println("Pokemon capturado correctamente");
+                        System.out.println("net.salesianos.clases.Pokemon capturado correctamente");
 
                     } else {
                         System.out.println("No se ha encontrado el pokemon en la lista de avistados.");
