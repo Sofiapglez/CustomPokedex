@@ -30,7 +30,7 @@ public class PokemonLegendario extends Pokemon{
         if (localizacion != null) {
             msg += localizacion;
         } else {
-            msg += "???";
+            msg += "??";
         }
         return msg;
     }
