@@ -38,6 +38,7 @@ public class Pokemon {
         return descripcion;
     }
 
+
     public void setAltura(double altura) {
         this.altura = altura;
     }
