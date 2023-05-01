@@ -19,4 +19,4 @@ Para este proyecto se han creado las siguientes clases:
   * obtenerPokemon: indica la posicion de un pokemon en la lista
   * buscarPokemon: busca el nombre del pokemon en la lista.
 
-Todas estas se ejecutan en la clase net.Main.
+Todas estas se ejecutan en la clase Main.
