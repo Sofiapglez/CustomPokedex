@@ -50,4 +50,44 @@ public class Pokemon {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    @Override
+    public String toString() {
+        String msg = "";
+        if (nombre!=null) {
+            msg = nombre;
+        } else {
+            msg += "??";
+        }
+
+        msg += "\n";
+        if (tipo!=null) {
+            msg += tipo;
+        } else {
+            msg += "??";
+        }
+
+        msg += "\nHT ";
+        if (altura!= 0) {
+            msg += altura;
+        } else {
+            msg += "??";
+        }
+
+        msg += "\nWT ";
+        if (peso!= 0) {
+            msg += peso + " lb";
+        } else {
+            msg += "??";
+        }
+
+        msg += "\n";
+        if (descripcion!= null) {
+            msg += "-----------------------------\n" + descripcion;
+        } else {
+            msg += "??";
+        }
+
+        return msg;
+    }
 }
