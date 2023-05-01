@@ -31,4 +31,25 @@ public class ListaPokemon {
         }
         System.out.println("No se encuentra el pokemon");
     }
+
+    public void mostrarLista() {
+        if (cantidad == 0) {
+            System.out.println("No hay pokemons en la lista");
+        } else {
+            for (int i = 0; i < cantidad; i++) {
+                System.out.println("Pokemon " + (i + 1) + ":");
+                System.out.println(pokemonArray[i].toString());
+                System.out.println();
+            }
+        }
+    }
+
+    public Pokemon obtenerPokemon (int posicion) {
+        if (posicion < 0 || posicion >= cantidad) {
+            System.out.println("No hay un pokemon en la posición indicada");
+            return null;
+        } else {
+            return pokemonArray[posicion];
+        }
+    }
 }
