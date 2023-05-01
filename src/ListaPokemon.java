@@ -52,4 +52,13 @@ public class ListaPokemon {
             return pokemonArray[posicion];
         }
     }
+
+    public Pokemon buscarPokemon(String nombre) {
+        for (int i = 0; i < cantidad; i++) {
+            if (pokemonArray[i].getNombre().equalsIgnoreCase(nombre)) {
+                return pokemonArray[i];
+            }
+        }
+        return null;
+    }
 }
