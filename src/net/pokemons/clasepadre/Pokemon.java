@@ -1,3 +1,5 @@
+package net.pokemons.clasepadre;
+
 public class Pokemon {
     private String nombre;
     private String tipo;
